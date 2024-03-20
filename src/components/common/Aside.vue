@@ -23,11 +23,11 @@ defineProps({
   }
 })
 const emit = defineEmits(['refreshNoteList', 'clearFavoritesList'])
-const onClickRefreshList = () => {
+const onClickRefreshList = (): void => {
   emit('refreshNoteList')
 }
 
-const onClickClearFavoritesList = () => {
+const onClickClearFavoritesList = (): void => {
   emit('clearFavoritesList')
 }
 </script>
@@ -38,7 +38,7 @@ const onClickClearFavoritesList = () => {
   display: flex;
   flex-direction: column;
   gap: $base-flex-gap;
-  background-color: red;
+  background-color: $aside-color;
   padding: $base-padding;
 }
 </style>

@@ -38,12 +38,12 @@ const isFilterActive = ref(false);
 const isFavorites = ref(false);
 const activeTab = ref<string>('noteList');
 
-const onClickRefreshNoteList = async () => {
+const onClickRefreshNoteList = async (): Promise<void> => {
   noteList.value = await getNotes('random');
   isFilterActive.value = false;
 };
 
-const onClickClearFavoritesList = () => {
+const onClickClearFavoritesList = (): void => {
   favoritesList.value = [];
   noteList.value.forEach(el => {
     el.isFavorite = false;

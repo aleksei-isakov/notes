@@ -53,8 +53,9 @@ const onClickRemoveFromFavorites = (id) => {
   display: flex;
   flex-direction: column;
   gap: $base-flex-gap;
-  background-color: green;
+  background-color: $main-color;
   margin: 0 auto;
+  z-index: 1;
   min-width: 1080px;
   max-width: 1080px;
   padding: $base-padding;

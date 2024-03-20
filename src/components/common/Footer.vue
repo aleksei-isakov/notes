@@ -55,7 +55,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: yellow;
+  background-color: $footer-color;
   padding: $base-padding;
 }
 .footer-link-container {

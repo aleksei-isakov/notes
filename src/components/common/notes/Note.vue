@@ -49,14 +49,14 @@ const props = defineProps({
 
 const emit = defineEmits(['onClickFilterByAuthor', 'onClickAddToFavorites', 'onClickRemoveFromFavorites'])
 
-const onClickAddToFavorites = () => {
+const onClickAddToFavorites = (): void => {
   emit('onClickAddToFavorites', props.note)
 }
 
-const onClickRemoveFromFavorites = () => {
+const onClickRemoveFromFavorites = (): void => {
   emit('onClickRemoveFromFavorites', props.note._id)
 }
-const onCLickFilterByAuthor = (authorSlug) => {
+const onCLickFilterByAuthor = (authorSlug: string): void => {
   emit('onClickFilterByAuthor', authorSlug)
 }
 

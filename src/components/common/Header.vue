@@ -20,7 +20,7 @@ defineProps({
 })
 const emit = defineEmits(['setActiveTab'])
 
-const onClickSetActiveTab = (tab: string) => {
+const onClickSetActiveTab = (tab: string): void => {
   emit('setActiveTab', tab);
 };
 </script>
@@ -29,9 +29,12 @@ const onClickSetActiveTab = (tab: string) => {
 .header {
   grid-area: header;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   align-items: center;
   justify-content: space-between;
-  background-color: blue;
+  background-color: $header-color;
   padding: $base-padding;
 }
 
