@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "include": [
+      "./vue.d.ts"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ],
+    "target": "esnext",
+    "strict": true,
+  }
+}
